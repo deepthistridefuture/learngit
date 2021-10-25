@@ -2,6 +2,7 @@ import React , {Component} from "react"
 import { connect } from "react-redux";
 import { buyLaptop } from "../../redux/actions/action.js";
 
+
 export class Shop extends Component{
 
     // state = {
@@ -37,4 +38,5 @@ const mapdispatchtoprops = (dispatch) =>{
         buyLaptop : () => dispatch(buyLaptop())
     }
 }
+
 export default connect(mapStateProps , mapdispatchtoprops )(Shop);//mapdispatchtoprops //higherorder component
